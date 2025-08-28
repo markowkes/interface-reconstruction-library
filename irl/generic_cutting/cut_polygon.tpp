@@ -302,7 +302,7 @@ void cutPolygonByPlaneInPlace(PolygonType* a_polygon,
   double distance_to_vertex_after_second_intersection =
       getIntersectionPts(*a_polygon, a_cutting_plane, a_flip_cut,
                          &intersection_pts, &index_after_intersection);
-  if (intersection_pts.size() == 0) {
+  if (intersection_pts.size() < 2) {
     // No intersection with plane, distance to any point will tell us if fully
     // under or over plane
     if (distance_to_vertex_after_second_intersection <= 0.0) {
