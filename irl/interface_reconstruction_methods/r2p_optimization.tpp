@@ -1014,9 +1014,9 @@ PlanarSeparator R2P_3D2P<CellType>::getReconstructionFromR2PParam(
   setDistanceToMatchVolumeFractionPartialFill(this->system_center_cell_m,
                                               this->volume_fraction_m,
                                               &reconstruction_to_return);
-  cleanReconstructionSameNormal(this->system_center_cell_m,
-                                this->volume_fraction_m,
-                                &reconstruction_to_return);
+  // cleanReconstructionSameNormal(this->system_center_cell_m,
+  //                               this->volume_fraction_m,
+  //                               &reconstruction_to_return);
   return reconstruction_to_return;
 }
 
